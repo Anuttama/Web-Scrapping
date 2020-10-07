@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Wordcloud Page</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+     <!--<link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">-->
+  <style>
+body{
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size : cover;
+}
+ ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(74, 27, 107);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(35, 178, 184);
+}
+
+</style>
+
+
+    <ul>
+        <li><a class="activate" href="/home">Home</a></li>
+    </ul>
+</head>
+
+<body>
+<img src="static/IMG_FOLDER/{{imageFile}}" alt="Wordcloud">
+</body>
+
+</html>
